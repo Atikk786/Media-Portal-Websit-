@@ -1,0 +1,115 @@
+/* common css transition effect */
+body{font-family: 'Open Sans', sans-serif;font-size: 14px;line-height: 1.3em;font-weight: 400;}
+p{font-family: 'Open Sans', sans-serif;font-size: 14px;line-height: 1.3em;font-weight: 400;}
+h1, h2, h3, h4, h5, h6{font-family: 'Releway',sans-serif;line-height: 1.3em; font-weight: 600;}
+a{transition: 0.5s;text-decoration: none;}
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #555;
+  color: #fff;
+}
+
+
+/*for Search Bar*/
+input[type=text] {
+  width: 100px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100px;
+}
+
+h2.title{color: #000000;font-size: 25px;position: relative;padding-bottom: 10px;text-align: center;}
+h2.title::after{position: absolute;width: 50px;height: 2px;content: "";left: 50%;margin-left: -25px;bottom: 0;background: #cbcbcd;}
+h4.sub_tile{}
+
+
+/* Top header Area */
+#top_header_area{background: #f9f9f9; border-bottom: 1px solid #e8e8e8;}
+#top_header_area ul{margin: 0; padding: 0; list-style: none;text-align: left;}
+#top_header_area ul.social{text-align: right;}
+#top_header_area ul.social li a i{color: #afb0b4;transition: 0.5s;}
+#top_header_area ul li:first-child{border-left: 1px solid #e8e8e8}
+#top_header_area ul.social li a:hover i{color: #960018}
+#top_header_area ul li{display: inline-block;padding: 10px; border-right: 1px solid #e8e8e8; color:#afb0b4;}
+#top_header_area ul li i{color: #960018;display: inline-block;padding-right: 5px;}
+
+/*header_area*/
+
+#header_area{background: #f8f8f8;}
+#header_area .col-md-3{padding: 10px;} 
+#header_area ul#nav{margin: 0;padding: 0;list-style: none;text-align: right;}
+#header_area ul#nav li{display:inline-block;}
+#header_area ul#nav li a{color: #565966;font-size: 14px;
+	text-transform: uppercase;font-family: 'Releway',sans-serif;
+	font-weight: 600;text-decoration: none;display: block;padding: 40px 10px;position: relative;}
+#header_area ul#nav li a::after{position: absolute;left: 0;bottom: 0;background-color: #df4a42;width: 0%;height: 5px;content: "";transition: 0.5s}
+#header_area ul#nav li a:hover::after{width: 100%;}
+#header_area ul#nav li a:hover{color: #0000FF;}
+
+
+/* featured_area */
+
+#featured_area{padding: 40px 0}
+#featured_area .row:first-child{margin-bottom: 40px;}
+#featured_area .child_feature_area{width: 30%; float: left; margin: 0 1% 20px; overflow: hidden;}
+#featured_area .left_feature{width: 25px;float: left;}
+#featured_area .left_feature i{width: 100px;border: 1px solid #ddd;color: #003153;font-size: 30px;text-align: center;display: block;padding: 30px;transition: 0.5s;}
+#featured_area .child_feature_area:hover .left_feature i{border: 1px solid #003153;color: #fff;background: #003153;}
+#featured_area .right_feature{width: 65%;float: right;}
+#featured_area .right_feature h5{color: #4d5359;font-size: 16px;padding-bottom: 10px;position: relative;}
+#featured_area .right_feature h5 a {color: #000000;}
+
+
+
+/*footer area*/
+
+#footer_area{background: #2c2f3c;padding: 30px 0; color: #fff;}
+#footer_area h4{color: #fff;font-size: 16px;margin-bottom: 20px;}
+#footer_area p{color: #cbcbcd;font-size: 13px;}
+#footer_area p i{margin-right: 10px;}
+#footer_area a{}
+#footer_area a:hover{color: #DF4c46;}
+#footer_area ul{margin: 0;padding: 0;list-style: none;}
+#footer_area ul li{display: block;margin-bottom: 10px;}
+#footer_area ul li a{color: #cbcbcd;font-size: 13px;text-decoration: none;}
+#footer_area ul li a:hover{color: #DF4c46;}
+#footer_area ul.tagcloud{text-align: left;}
+#footer_area ul.tagcloud li{display: inline-block;margin-right: 5px;margin-bottom: 5px;}
+#footer_area ul.tagcloud li a{background: #252833;padding: 8px 15px;display: block;font-size: 12px;}
+#footer_area ul.tagcloud li a:hover{background: #C0C0C0;color: #fff;}
+#footer_area ul.social{padding: 20px 0;text-align: left;}
+#footer_area ul.social li{display: inline-block;margin-right: 20px;margin-bottom: 10px;}
+#footer_area ul.social li a{display: block;font-size: 20px;}
+#footer_area ul.download_link{padding: 20px 0;}
+
+/* Copyright Aear*/
+
+#copyright_area{background: #262934;padding: 10px 0;}
+#copyright_area p{margin: 0; color: #cbcbcd; font-size: 13px;}
+#copyright_area ul{margin: 0;padding: 0;list-style: none;text-align: left;}
+#copyright_area ul li{display: inline-block;margin-left: 10px;}
+#copyright_area ul li ul{display: none;}
+#copyright_area ul li a{color: #cbcbcd;font-size: 13px;display: block;padding: 0px 0px; text-decoration: none;}
+#copyright_area ul li a:hover{color: #DF4C46;}
+
+/* Responsive Style*/
+@media only screen and (min-width: 200px) and (max-width: 479px){
+	.slicknav_menu{display: block;}
+	#top_header_area{display: none;}
+
+#header_area .col-md-3{text-align: center;}
+#featured_area .child_feature_area{width: 100%;margin-bottom: 20px;}
+
+
+
+
+
+
+
+
