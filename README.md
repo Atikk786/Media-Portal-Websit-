@@ -1,6 +1,6 @@
 # Media-Portal-Websit-
 Media portal with Login and Registration Page with the help of HTML5,CSS,Java Script Bootstrap and SQL.
-1->In this website the is xamp server for Database.
+1->In this website xamp server is used for Database Conecivity.
 
 2->Database name is star_india.
 
